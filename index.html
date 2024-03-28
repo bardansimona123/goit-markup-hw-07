@@ -10,60 +10,62 @@
     <title>Webstudio</title>
 </head>
 <body>
-    <div class="js-menu-container  is-open">
-        <button class="menu-toggle js-close-menu">
-            <svg>
-                <use href="./icons/symbol-defs.svg#icon-close-black"></use>
-            </svg>
-        </button>
-        <div class="mobile-menu-navigation">
-            <ul>
-                <li><a class="mobile-menu-studio"  href="index.html">Studio</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="">Contacts</a></li>
-            </ul>
-            <div>
-                <div class="mobile-menu-contacts">
-                    <a class="phone" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
-                    <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </div>
-                <div class="mobile-menu-socials">
-                    <a 
-                        href="https://www.instagram.com/" 
-                        target="_blank" class="icon" 
-                        aria-label="instagram-link"> 
-                        <svg>
-                            <use href="./icons/symbol-defs-sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                    <a 
-                        href="https://www.twitter.com/" 
-                        target="_blank" class="icon" 
-                        aria-label="twitter-link"> 
-                        <svg>
-                            <use href="./icons/symbol-defs-sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                    <a 
-                        href="https://www.facebook.com/" 
-                        target="_blank" class="icon" 
-                        aria-label="facebook-link"> 
-                        <svg>
-                            <use href="./icons/symbol-defs-sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a> 
-                    <a 
-                        href="https://www.linkedin.com/" 
-                        target="_blank" class="icon" 
-                        aria-label="linkedin-link"> 
-                        <svg>
-                            <use href="./icons/symbol-defs-sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a> 
+    <section class="menu-section" id="menuOptions">
+        <div class="js-menu-container">
+            <button class="menu-toggle js-close-menu" onclick="hideMenu()">
+                <svg>
+                    <use href="./icons/symbol-defs.svg#icon-close-black"></use>
+                </svg>
+            </button>
+            <div class="mobile-menu-navigation">
+                <ul>
+                    <li><a class="mobile-menu-studio"  href="index.html">Studio</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="">Contacts</a></li>
+                </ul>
+                <div>
+                    <div class="mobile-menu-contacts">
+                        <a class="phone" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+                        <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </div>
+                    <div class="mobile-menu-socials">
+                        <a 
+                            href="https://www.instagram.com/" 
+                            target="_blank" class="icon" 
+                            aria-label="instagram-link"> 
+                            <svg>
+                                <use href="./icons/symbol-defs-sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                        <a 
+                            href="https://www.twitter.com/" 
+                            target="_blank" class="icon" 
+                            aria-label="twitter-link"> 
+                            <svg>
+                                <use href="./icons/symbol-defs-sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a 
+                            href="https://www.facebook.com/" 
+                            target="_blank" class="icon" 
+                            aria-label="facebook-link"> 
+                            <svg>
+                                <use href="./icons/symbol-defs-sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a> 
+                        <a 
+                            href="https://www.linkedin.com/" 
+                            target="_blank" class="icon" 
+                            aria-label="linkedin-link"> 
+                            <svg>
+                                <use href="./icons/symbol-defs-sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a> 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <header>
         <div class=" header-container">
             <a  href="index.html"><span class="web">WEB</span><span class="studio">STUDIO</span></a>
@@ -75,16 +77,21 @@
                     <li><a href="">Contacts</a></li>
                 </ul>
             </nav>
-
-            <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="phone" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+            <div class="header-contacts">
+                <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="phone" href="tel:+11 (000) 111-11-11">+11 (000) 111-11-11</a>
+            </div>
+            
+            <svg class="burger-menu" onclick="toggleMenu()">
+                <use href="./icons/symbol-defs.svg#icon-menu-hamburger"></use>
+            </svg>
         </div>
     </header>
 
     <main>
         <section class="hero-section">
             <div class="hero-container">
-                <h1>Effective Solutions for Your Business</h1>
+                <h1>Effective Solutions<br> for Your Business</h1>
                 <button type="button" class="button book-a-service-btn" data-modal-open>Order Service</button>
             </div>
         </section>
@@ -150,7 +157,7 @@
                                 <use href="./icons/symbol-defs.svg#icon-Group"></use>
                             </svg>
                         </div>
-                        <h3>Strategy</h3>
+                        <h2>Strategy</h2>
                         <p>Our goal is to identify the business problem to walk away with 
                         the perfect and creative solution.</p>
                     </li>
@@ -160,7 +167,7 @@
                                     <use href="./icons/symbol-defs.svg#icon-clock"></use>
                                 </svg>
                             </div>
-                        <h3>Punctuality</h3>
+                        <h2>Punctuality</h2>
                         <p>Bring the key message to the brand's audience for the best 
                                 price within the shortest possible time.</p>
                     </li>
@@ -170,7 +177,7 @@
                                 <use href="./icons/symbol-defs.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3>Diligence</h3>
+                        <h2>Diligence</h2>
                         <p>Research and confirm brands that present the strongest digital 
                         growth opportunities and minimize risk.</p>
                     </li>
@@ -180,7 +187,7 @@
                                 <use href="./icons/symbol-defs.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3>Technologies</h3> 
+                        <h2>Technologies</h2> 
                         <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
                     </li> 
                 </ul> 
@@ -404,7 +411,7 @@
 
     <footer>
         <div class="footer-container">
-            <address>
+            <address class="address">
                 <a  href="index.html"><span class="web">WEB</span><span class="studio-footer">STUDIO</span></a>
                 <p>Increase the flow of customers and <br>sales for your business with digital <br>
                     marketing & growth solutions.</p>
@@ -447,7 +454,7 @@
                 </div>
             </div>
             <form class="subscribe">
-                <div>
+                <div class="subscribe-information">
                     <h2 class="subscribe-title">Subscribe</h2>
                     <input type="text" id="email" name="email" placeholder="Email" required minlength="10">
                 </div>

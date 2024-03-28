@@ -13,6 +13,7 @@
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
+    margin: 0;
 }
 
 header {
@@ -49,6 +50,11 @@ header ul {
     padding-bottom: 24px;
     gap: 30px;
     padding-left: 0px;
+    display: none;
+}
+
+.header-contacts {
+    display: none;
 }
 
 nav li a {
@@ -103,20 +109,24 @@ ul {
 
 .hero-section {
     display: flex;
+    background-repeat: no-repeat;
     justify-content: center;
-    height: 600px;
+    align-items: center;
+    height: auto;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/image-background.png");
+    background-size: auto 100%;
+    background-position: center top;
 }
 
 .hero-section h1 {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 107%;
+    font-size: 36px;
+    line-height: 40px;
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
-    width: 496px;
-    margin-bottom: 48px;
+    margin-top: 112px;
+    margin-bottom: 62px;
 }
 
 .hero-section button {
@@ -129,24 +139,35 @@ ul {
     background: var(--iris);
     width: 169px;
     height: 56px;
+    margin-bottom: 112px;
 }
 
 .hero-section button:hover {
     background: var(--ocean);
 }
 
-.section-1 h3 {
-    font-weight: 500;
+.section-1 h2 {
+    font-weight: 700;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
 }
 
 .section-1 p {
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.section-2 {
+    display: none;
+    width: 0;
+    height: 0;
 }
 
 .section-2 h2 {
@@ -171,7 +192,6 @@ ul {
 
 .section-3 {
     background: var(--cloud);
-    height: 732px;
 }
 
 .section-3 h2 {
@@ -182,7 +202,6 @@ ul {
     text-transform: capitalize;
     text-align: center;
     color: var(--navy-blue);
-    padding-top: 120px;
     margin-bottom: 72px;
 }
 
@@ -205,7 +224,11 @@ ul {
 
 .section-3 ul {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 72px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
 }
 
 .section-3 li {
@@ -221,7 +244,17 @@ ul {
 
 footer {
     background: var(--navy-blue);
-    height: 312px;
+}
+
+.address {
+   position: relative;
+   padding-bottom: 32px;
+}
+
+.address a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer p {
@@ -229,6 +262,8 @@ footer p {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--cloud);
+    font-style: normal;
+    padding-top: 16px;
 }
 
 .studio-footer {
@@ -239,6 +274,17 @@ footer p {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--cloud);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.social h2 {
+    text-align: center;
 }
 
 
@@ -312,18 +358,17 @@ footer p {
 
 .header-container {
     display: flex;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 16px;
+    width: 100%;
     padding-top: 24px;
     padding-bottom: 24px;
     height: 24px;
+    justify-content: space-between;
+    padding-right: 16px;
 }
 
 .container-1{
     display: flex;
-    padding: 120px 115px;
-    justify-content: space-between;
-    width: 1050px;
 }
 
 .container-2{
@@ -333,17 +378,17 @@ footer p {
 }
 
 .container-3 {
-    width: 1050px;
-    padding-left:115px;
-    padding-right: 180px;
+    display: block;
+    padding: 96px 0;
 }
 
 .footer-container {
     padding-top: 100px;
-    padding-left: 153px;
+    gap: 40px;
     display: flex;
-    gap: 100px;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Portfoliu page */
@@ -383,7 +428,7 @@ footer p {
  
 .icon-area {
     background-color: #F4F4FD;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 112px;
@@ -395,7 +440,12 @@ footer p {
 }
 
 .container-1 ul {
-    gap: 10px;
+    gap: 72px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    margin-top: 96px;
+    margin-bottom: 75px;
 }
 
 .icon svg {
@@ -447,6 +497,11 @@ footer p {
     margin-top: 72px;
 }
 
+.section-4 {
+    padding: 96px 16px 24px 16px;
+   
+}
+
 .section-4 h2 {
     text-align: center;
     font-weight: 700;
@@ -454,18 +509,25 @@ footer p {
     line-height: 111%;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-top: 120px;
+    margin: 0;
 }
 
 .section-4 ul {
-    gap: 8px;
-    padding-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 120px;
-    padding: 0px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
 }
+
+.section-4 ul > :nth-child(1),
+.section-4 ul > :nth-child(3),
+.section-4 ul > :nth-child(5) {
+    margin-right: 16px;
+}
+
+
 .section-4 li {
-    width: 160px;
+    width: 178px;
     height: 88px;
     margin-left: 0px;
     margin-right: 0px;
@@ -474,7 +536,7 @@ footer p {
     align-items: center;
     border-radius: 5% ;
     border: 2px solid #8E8F99;
-    
+    margin-bottom: 72px;
 }
 
 .is-hidden {
@@ -704,24 +766,30 @@ input[type=submit]:focus {
     color: #ffffff;
     font-weight: 500;
     margin-bottom: 16px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .subscribe {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 .subscribe input {
-    width: 250px;
+    width: 398px;
     height: 40px;
-    padding-left: 16px;
+    padding-left: 15px;
     padding-top: 13px;
     background: transparent;
     color:white;
+    margin-top: 40px;
+    margin-bottom: 16px;
 }
 
 .subscribe input[type=submit] {
-    margin-top: 52px;
-    margin-left: 20px;
     width: 150px;
     background-color: var(--iris);
     color: white;
@@ -731,7 +799,18 @@ input[type=submit]:focus {
     padding-top: 0;
     border: none;
     border-radius: 4px;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
 }
+
+.subscribe-information {
+    position: relative;
+}
+
 
 .agree-check {
     display: flex;
@@ -785,21 +864,20 @@ input:valid {
 
 .subscribe-button {
     display: flex;
+    position: relative;
+    padding-bottom: 54px;
 }
 
 /* Tema 7 */
 
-.js-menu-container.is-open {
+.js-menu-container {
     display: flex;
     flex-direction: column;
-    position: relative;
     top: 0;
-    right: 0;
     background-color: white;
     z-index: 1;
     padding-left: 40px;
-    padding-right: 35px;
-    padding-bottom: 40px;
+    padding-bottom: 155px;
     height: 100%;
     width: 100%;
 }
@@ -807,9 +885,9 @@ input:valid {
 .mobile-menu-navigation ul {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5em;
     padding: 0;
-    margin-top: 80px;
+    margin-top: 5em;
 }
 
 .mobile-menu-navigation li a {
@@ -846,6 +924,7 @@ input:valid {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 .menu-toggle.js-close-menu svg {
@@ -902,6 +981,31 @@ input:valid {
 
 .mobile-menu-socials .icon:hover {
     background: #31d0aa;
+}
+
+.header-container svg {
+    width: 32px;
+    height: 22px;
+    
+    stroke: #2E2F42;
+}
+
+.menu-section {
+    position: relative;
+    display: none;
+    
+}
+
+.show {
+    display: flex;
+    position: fixed;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow-y: auto;
+    z-index: 999;
 }
 
 
