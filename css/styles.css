@@ -107,6 +107,8 @@ ul {
     color: var(--ocean);
 }
 
+/* main page */
+
 .hero-section {
     display: flex;
     background-repeat: no-repeat;
@@ -203,6 +205,7 @@ ul {
     text-align: center;
     color: var(--navy-blue);
     margin-bottom: 72px;
+    margin-top: 0;
 }
 
 .section-3 h3 {
@@ -233,12 +236,12 @@ ul {
 
 .section-3 li {
     background-color: #ffffff;
-    width: 242px;
+    width: 264px;
     box-shadow: 0px 2px 1px 0 #2E2F4214;
 }
 
 .section-3 li img {
-    width: 242px;
+    width: 100%;
 }
 
 
@@ -255,11 +258,12 @@ footer {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    font-style: normal;
 }
 
 footer p {
     font-size: 16px;
-    line-height: 150%;
+    line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--cloud);
     font-style: normal;
@@ -369,6 +373,9 @@ footer p {
 
 .container-1{
     display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .container-2{
@@ -439,14 +446,25 @@ footer p {
     height: 64px;
 }
 
-.container-1 ul {
+.description-1 ul {
     gap: 72px;
     display: flex;
     flex-direction: column;
-    padding-left: 1em;
+    padding-left: 0em;
     margin-top: 96px;
-    margin-bottom: 75px;
-    padding-right: 1em;
+    margin-bottom: 0px;
+    padding-right: 0em;
+    width: 100%;
+}
+
+.description-2 ul {
+    gap: 45px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0em;
+    margin-top: 72px;
+    margin-bottom: 96px;
+    padding-right: 0em;
     width: 100%;
 }
 
@@ -1020,7 +1038,136 @@ input:valid {
     z-index: 999;
 }
 
+/* Stilizare tableta si device-uri peste 768px */
 
+@media screen and (min-width:768px) {
+    .header-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: -8px;
+    }
+
+    .header-container .email {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        margin-right: 0;
+    }
+
+    .phone {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+    }
+
+
+    header ul {
+        display: flex;
+        flex-direction: row;
+        margin-left: 7.5em;
+        margin-right: 7.5em;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .hero-section {
+        background-size: cover;
+        background-position: 1% 50%;
+    }
+
+    .container-1 ul {
+        flex-direction: row;
+
+    }
+
+    .section-3 ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin: 0;
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .section-3 ul > :nth-child(1),
+    .section-3 ul > :nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .section-3 li {
+        width: 45%;
+    }
+
+    .section-4 li {
+        width: 30%;
+        
+    }
+
+    .section-4 ul > :nth-child(1),
+    .section-4 ul > :nth-child(2),
+    .section-4 ul > :nth-child(4),
+    .section-4 ul > :nth-child(5) {
+        margin-right: 16px;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .address {
+        margin-right: 85px;
+        margin-left: -118px;
+        position: relative;
+        padding-bottom: 72px;
+    }
+
+    .address a {
+        margin-left: -69px;
+    }
+
+    .social h2 {
+        position: relative;
+        margin-left: -65px;
+    }
+
+    .social {
+        margin-top: -38px;
+    }
+
+    .subscribe {
+        flex-direction: row;
+        padding-right: 170px;
+        width: auto;
+        padding-bottom: 90px;
+    }
+
+    .subscribe-information {
+        margin-right: 150px;
+    }
+
+    .subscribe-button {
+        height: 40px;
+        margin-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .subscribe-title {
+        left: 28%;
+    }
+
+    .subscribe input {
+        width: 16.5em;
+    }
+
+    .modal-content {
+        width: 50%;
+        margin-top: -270px;
+    }
+}
  
 
 
