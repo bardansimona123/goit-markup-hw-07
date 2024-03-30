@@ -181,14 +181,17 @@ ul {
     text-align: center;
     color: var(--navy-blue);
     margin-bottom: 72px;
+    margin-top: 0;
 } 
 
 .section-2 ul {
-    gap: 8px;
+    gap: 12px;
+    padding: 0;
+    margin: 0;
 }
 
 .section-2 img {
-    width: 325px;
+    width: 360px;
     margin-bottom: 120px;
 }
 
@@ -234,6 +237,12 @@ ul {
     padding-left: 0;
 }
 
+.images-row {
+    gap: 72px;
+    display: flex;
+    flex-direction: column;
+}
+
 .section-3 li {
     background-color: #ffffff;
     width: 264px;
@@ -241,7 +250,9 @@ ul {
 }
 
 .section-3 li img {
-    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
 
 
@@ -379,9 +390,7 @@ footer p {
 }
 
 .container-2{
-    width: 1050px;
-    padding-left: 115px;
-    padding-right: 156px;
+    justify-content: center;
 }
 
 .container-3 {
@@ -1084,22 +1093,18 @@ input:valid {
     }
 
     .section-3 ul {
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0; 
+        display: flex;
+        gap: 64px;
+    }
+
+    .images-row {
+        display: flex;
         gap: 24px;
-        margin: 0;
-        padding-left: 108px;
-        padding-right: 108px;
+        flex-direction: row;
     }
 
-    .section-3 ul > :nth-child(1),
-    .section-3 ul > :nth-child(2) {
-        margin-bottom: 40px;
-    }
-
-    .section-3 li {
-        width: 45%;
-    }
 
     .section-4 li {
         width: 30%;
@@ -1168,6 +1173,161 @@ input:valid {
         margin-top: -270px;
     }
 }
+
+@media screen and (min-width:1158px) {
+    .header-contacts {
+        flex-direction: row;
+        margin-top: 0;
+        gap: 40px;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .header-container {
+        width: auto;
+    }
+
+    .header-container .email {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    }
+
+    .phone {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+    }
+
+    header ul {
+        margin-left: 76px;
+        margin-right: 332px;
+    }
+
+    .hero-section {
+        height: 600px;
+    }
+
+    .hero-section h1 {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        margin-bottom: 48px;
+    }
+
+    .section-1 {
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+    }
+
+    .container-1 {
+        flex-direction: row;
+        gap: 24px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .icon-area {
+        display: flex;
+    }
+
+    .description-1 ul {
+        gap: 24px;
+        margin-top: 0;
+        width: auto;
+    }
+    .description-2 ul {
+        gap: 24px;
+        margin-top: 0;
+        width: auto;
+    }
+
+    .description-1 li {
+        width: 264px;
+    }
+
+    .description-2 li {
+        width: 264px;
+    }
+
+    .section-2 {
+        display: flex;
+        height: auto;
+        width: auto;
+        justify-content: center;
+    }
+
+    .section-3 ul {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .container-3 {
+        padding: 120px 0;
+    }
+
+    .section-4 {
+        padding: 120px 0;
+    }
+
+    .section-4 ul {
+        flex-wrap: nowrap;
+        gap: 22px;
+    }
+
+    .section-4 li {
+        width: 166px;
+    }
+
+    .section-4 ul > :nth-child(1),
+    .section-4 ul > :nth-child(2),
+    .section-4 ul > :nth-child(4),
+    .section-4 ul > :nth-child(5) {
+        margin-right: 0;
+    }
+
+    .section-4 ul > :nth-child(1),
+    .section-4 ul > :nth-child(3),
+    .section-4 ul > :nth-child(5) {
+        margin-right: 0;
+    }
+
+    .icons-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-container {
+        gap: 80px;
+    }
+
+    .address {
+        margin-left: 0;
+        margin-right: 40px;
+    }
+
+    .social {
+        margin-top: -76px;
+    }
+
+    .subscribe {
+        padding-right: 0;
+    }
+
+    .subscribe-information {
+        margin-right: 22px;
+    }
+
+    .subscribe input {
+        width: 246px;
+    }
+
+}
+
+
  
 
 
