@@ -1218,6 +1218,17 @@ input:valid {
         margin-bottom: 48px;
     }
 
+    .modal-content {
+        padding: 16px;
+        width: 27.5%;
+        height: 584px;
+        margin-top: 30px;
+    }
+
+    .form-section {
+        margin-bottom: 24px;
+    }
+
     .section-1 {
         display: flex;
         justify-content: center;
