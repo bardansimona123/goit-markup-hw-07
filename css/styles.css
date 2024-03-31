@@ -1208,6 +1208,7 @@ input:valid {
 
     .hero-section {
         height: 600px;
+
     }
 
     .hero-section h1 {
@@ -1326,6 +1327,43 @@ input:valid {
     }
 
 }
+
+@media screen and ( min-width: 458px) and (min-resolution: 1dppx) and (-webkit-min-device-pixel-ratio: 1) {
+    .hero-section {
+        background-image: url(../images/background-image-m1x.png);
+    }
+}
+
+@media screen and (min-width: 458px) and (min-resolution: 2dppx) and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+        background-image: url(../images/background-image-m2x.png);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 1dppx) and (-webkit-min-device-pixel-ratio: 1) {
+    .hero-section {
+        background-image: url(../images/background-image-t1x.png);
+    }
+}
+
+@media screen and (min-width: 768px) and (min-resolution: 2dppx) and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+        background-image: url(../images/background-image-t2x.png);
+    }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 1dppx) and (-webkit-min-device-pixel-ratio: 1) {
+    .hero-section {
+        background-image: url(../images/background-image-d1x.png);
+    }
+}
+
+@media screen  and (min-width: 1158px) and (min-resolution: 2dppx) and (-webkit-min-device-pixel-ratio: 2) {
+    .hero-section {
+        background-image: url(../images/background-image-d2x.png);
+    }
+}
+
 
 
  
